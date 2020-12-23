@@ -1,0 +1,17 @@
+{
+  "name": "@very-geek/glimmer-snowpack",
+  "version": "0.0.1",
+  "description": "An exprimental project to play glimmer.js with snowpack.",
+  "main": "src/index.js",
+  "repository": "https://github.com/very-geek/glimmer-snowpack",
+  "author": "nightire <nightire@very-geek.com>",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "snowpack": "^3.0.0-rc.2"
+  },
+  "scripts": {
+    "build": "snowpack build",
+    "start": "snowpack dev"
+  }
+}
