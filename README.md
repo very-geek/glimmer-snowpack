@@ -68,3 +68,20 @@ babel 来处理。
 值得注意的是，当 snowpack 使用了 babel plugin 之后，会自动读取默认的 babel
 config 文件，也就是 `babel.config.*`，所以也可以把相关的配置选项写到此处。但本项
 目为了简明扼要并没有这么做。
+
+## 步骤三、支持 TypeScript
+
+其实 snowpack 内置了对 `.ts` 文件的编译能力，但是在实际的项目中的需求往往更复杂
+一些，因此还是需要能够单独的控制和配置。
+
+```shell
+$ yarn add --dev @snowpack/plugin-typescript
+```
+
+接着要做两件事：
+
+1. 配置 TypeScript，详见 `tsconfig.json`。
+2. 开启对 SourceMaps 的支持，详见 `snowpack.config.js`。
+
+另外，babel 相关的配置也从 `snowpack.config.js` 文件移到了单独的
+`babel.config.js` 文件里去了。
